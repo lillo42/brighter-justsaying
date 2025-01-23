@@ -53,7 +53,7 @@ var host = new HostBuilder()
                 [
                     new()
                     {
-                        Topic = new RoutingKey(nameof(BrigtherMessageProducer).ToValidSNSTopicName()),
+                        Topic = new RoutingKey(nameof(BrighterMessageProducer).ToValidSNSTopicName()),
                         MakeChannels = OnMissingChannel.Create
                     }
                 ]).Create())
@@ -86,7 +86,7 @@ while (true)
         continue;
     }
 
-    await processor.PostAsync(new BrigtherMessageProducer
+    await processor.PostAsync(new BrighterMessageProducer
     {
         Text = message,
         Conversation = Guid.NewGuid().ToString(),
@@ -101,7 +101,7 @@ public class JustSayingMessageProducer : JustSayingEvent
     public string Text { get; set; } = string.Empty;
 }
 
-public class BrigtherMessageProducer : JustSayingEvent 
+public class BrighterMessageProducer : JustSayingEvent 
 {
     public string Text { get; set; } = string.Empty;
 }

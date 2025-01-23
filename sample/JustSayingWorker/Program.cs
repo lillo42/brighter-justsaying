@@ -41,16 +41,16 @@ var host = new HostBuilder()
                 .Subscriptions(builder =>
                 {
                     builder
-                        .ForTopic<BrigtherMessageProducer>(cfg =>
+                        .ForTopic<BrighterMessageProducer>(cfg =>
                         {
                             cfg
-                                .WithTopicName(nameof(BrigtherMessageProducer))
+                                .WithTopicName(nameof(BrighterMessageProducer))
                                 .WithQueueName("brighter-to-justsaying");
                         });
                 });
         });
 
-        services.AddJustSayingHandler<BrigtherMessageProducer, BrigtherMessageProducerHandler>();
+        services.AddJustSayingHandler<BrighterMessageProducer, BrighterMessageProducerHandler>();
     })
     .UseConsoleLifetime()
     .Build();
@@ -93,23 +93,17 @@ public class JustSayingMessageProducer : Message
     public string Text { get; set; } = string.Empty;
 }
 
-public class BrigtherMessageProducer : Message
+public class BrighterMessageProducer : Message
 {
     public string Text { get; set; } = string.Empty;
 }
 
-public class BrigtherMessageProducerHandler : IHandlerAsync<BrigtherMessageProducer>
+public class BrighterMessageProducerHandler(ILogger<BrighterMessageProducerHandler> logger)
+    : IHandlerAsync<BrighterMessageProducer>
 {
-    private readonly ILogger<BrigtherMessageProducerHandler> _logger;
-
-    public BrigtherMessageProducerHandler(ILogger<BrigtherMessageProducerHandler> logger)
+    public Task<bool> Handle(BrighterMessageProducer message)
     {
-        _logger = logger;
-    }
-
-    public Task<bool> Handle(BrigtherMessageProducer message)
-    {
-        _logger.LogInformation("Received message from brigther: {Message}", message.Text);
+        logger.LogInformation("Received message from Brighter: {Message}", message.Text);
         return Task.FromResult(true);
     }
 }

@@ -2,7 +2,7 @@
     <PropertyGroup>
         <TargetFrameworks>$(LibTargetFrameworks)</TargetFrameworks>
         <IsPackable>true</IsPackable>
-        <Description>The Interop libs to integrate Brigther and JustSaying</Description>
+        <Description>The Interop libs to integrate Brighter and JustSaying</Description>
         <PackageTags>Brighter JustSaying</PackageTags>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
