@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{789730AC-0ECE-41B7-BE2B-4FCE3844DC2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brighter.Interop.JustSaying", "src\Brighter.Interop.JustSaying\Brighter.Interop.JustSaying.csproj", "{862C8A44-48FE-451C-A3A0-D5E5EFA6FCA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6723AE3C-8BCD-494E-8C4A-1D38D8853383}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		.editorconfig = .editorconfig
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brighter.Interop.JustSaying.Tests", "tests\Brighter.Interop.JustSaying.Tests\Brighter.Interop.JustSaying.Tests.csproj", "{3B34E620-D58F-4889-908E-1D0ED5558C62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9A19B2E1-7BC5-42A5-A6F3-D9FB4BBD244B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{8DC3D601-4204-4E52-9E0B-2DC74CCDE962}"
+	ProjectSection(SolutionItems) = preProject
+		sample\docker-compose.yml = sample\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrighterWorker", "sample\BrighterWorker\BrighterWorker.csproj", "{5BA9C1A1-7BB4-4D79-804D-06CFD1035AFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustSayingWorker", "sample\JustSayingWorker\JustSayingWorker.csproj", "{E633C3E2-6347-462E-A5E9-7332FAF92ADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brighter.Interop.JustSaying.Extensions.DependencyInjection", "src\Brighter.Interop.JustSaying.Extensions.DependencyInjection\Brighter.Interop.JustSaying.Extensions.DependencyInjection.csproj", "{7B6CED65-2996-43DD-812A-39E630C5577F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{6BCBFC0D-E6A4-4CA9-A7D3-278FE0053C62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BCBFC0D-E6A4-4CA9-A7D3-278FE0053C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCBFC0D-E6A4-4CA9-A7D3-278FE0053C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{862C8A44-48FE-451C-A3A0-D5E5EFA6FCA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{862C8A44-48FE-451C-A3A0-D5E5EFA6FCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{862C8A44-48FE-451C-A3A0-D5E5EFA6FCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{862C8A44-48FE-451C-A3A0-D5E5EFA6FCA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B34E620-D58F-4889-908E-1D0ED5558C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B34E620-D58F-4889-908E-1D0ED5558C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B34E620-D58F-4889-908E-1D0ED5558C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B34E620-D58F-4889-908E-1D0ED5558C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BA9C1A1-7BB4-4D79-804D-06CFD1035AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BA9C1A1-7BB4-4D79-804D-06CFD1035AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BA9C1A1-7BB4-4D79-804D-06CFD1035AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BA9C1A1-7BB4-4D79-804D-06CFD1035AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E633C3E2-6347-462E-A5E9-7332FAF92ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E633C3E2-6347-462E-A5E9-7332FAF92ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E633C3E2-6347-462E-A5E9-7332FAF92ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E633C3E2-6347-462E-A5E9-7332FAF92ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B6CED65-2996-43DD-812A-39E630C5577F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6CED65-2996-43DD-812A-39E630C5577F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6CED65-2996-43DD-812A-39E630C5577F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6CED65-2996-43DD-812A-39E630C5577F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{862C8A44-48FE-451C-A3A0-D5E5EFA6FCA1} = {789730AC-0ECE-41B7-BE2B-4FCE3844DC2B}
+		{3B34E620-D58F-4889-908E-1D0ED5558C62} = {9A19B2E1-7BC5-42A5-A6F3-D9FB4BBD244B}
+		{5BA9C1A1-7BB4-4D79-804D-06CFD1035AFC} = {8DC3D601-4204-4E52-9E0B-2DC74CCDE962}
+		{E633C3E2-6347-462E-A5E9-7332FAF92ADE} = {8DC3D601-4204-4E52-9E0B-2DC74CCDE962}
+		{7B6CED65-2996-43DD-812A-39E630C5577F} = {789730AC-0ECE-41B7-BE2B-4FCE3844DC2B}
+	EndGlobalSection
+EndGlobal

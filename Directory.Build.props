@@ -1,0 +1,26 @@
+<Project>
+    <PropertyGroup>
+        <LibTargetFrameworks>netstandard2.0;net8.0;net9.0</LibTargetFrameworks>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
+
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
+        <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <!-- disable the nullable warnings when compiling for .NET Standard 2.0 -->
+    <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+        <NoWarn>$(NoWarn);nullable</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../../README.md" Pack="true" PackagePath="/"/>
+    </ItemGroup>
+</Project>
