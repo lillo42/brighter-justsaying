@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" />
+      <PackageReference Include="Paramore.Brighter" />
+      <PackageReference Include="Paramore.Brighter.MessagingGateway.AWSSQS" />
+      <PackageReference Include="Paramore.Brighter.ServiceActivator.Extensions.DependencyInjection" />
+      <PackageReference Include="Paramore.Brighter.ServiceActivator.Extensions.Hosting" />
+      <PackageReference Include="Serilog.AspNetCore" />
+      <PackageReference Include="Serilog.Sinks.Console" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Brighter.Interop.JustSaying.Extensions.DependencyInjection\Brighter.Interop.JustSaying.Extensions.DependencyInjection.csproj" />
+      <ProjectReference Include="..\..\src\Brighter.Interop.JustSaying\Brighter.Interop.JustSaying.csproj" />
+    </ItemGroup>
+
+</Project>
